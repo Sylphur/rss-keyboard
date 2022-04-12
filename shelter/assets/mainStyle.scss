@@ -2,18 +2,41 @@
 @import "base/fonts";
 @import "base/buttons";
 
+                    // containers 
+
+.header-container {
+    @extend %container;
+    background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%),
+    linear-gradient(0deg, #211F20, #211F20);
+}
+.white-container {
+    @extend %container;
+}
+.grey-container {
+    @extend %container;
+    background-color: $color-light-i;
+}
+
+                    // wrappers
 header {
-    @extend %innerContainer;
+    @include innerContainer(60px);
     display: flex;
-    padding-top: 60px;
     padding-bottom: 60px;
     align-items: center;
 }
-.header-container {
-    @extend %container;
-    min-height: 500px;
-    background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%),
-    linear-gradient(0deg, #211F20, #211F20);
+.not-only {
+    @include innerContainer(60px);
+    display: flex;
+}
+.about-wrapper {
+    @include innerContainer();
+    display: flex;
+    padding-bottom: 100px;
+    height: auto;
+}
+.our-friends-wrapper {
+    @include innerContainer();
+    padding-bottom: 60px;
 }
 .logo {
     margin-right: auto;
@@ -23,10 +46,6 @@ header {
 }
 .header-nav a {
     margin-left: 35px;
-}
-.not-only {
-    @extend %innerContainer;
-    display: flex;
 }
 .not-only-content {
     margin-right: auto;
@@ -41,4 +60,25 @@ h2 {
     background-repeat: no-repeat;
     height: 728px;
     width: 698px;
+}
+.not-only-content p {
+    padding-bottom: 42px;
+}
+.about-image {
+    background-image: url("../../assets/images/about-pets.png");
+    background-repeat: no-repeat;
+    height: 408px;
+    width: 300px;
+    margin-left: 175px;
+    margin-right: auto;
+}
+.about-content {
+    width: 430px;
+    padding-right: 175px;
+}
+.our-friends-wrapper h3 {
+    text-align: center;
+}
+.our-friends-cards {
+    display: flex;
 }
