@@ -1,7 +1,19 @@
 .header-container {
   max-width: 1280px;
   margin: 0px auto;
-  background-color: #211F20;
+}
+
+@font-face {
+  font-family: Arial, Helvetica, sans-serif;
+  src: url(arialmt.ttf);
+}
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #CDCDCD;
+}
+
+.header-container {
+  background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), linear-gradient(0deg, #211F20, #211F20);
   height: 550px;
 }
 

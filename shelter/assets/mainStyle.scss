@@ -1,0 +1,9 @@
+@import "base/abstract";
+@import "base/fonts";
+
+.header-container {
+    @extend %container;
+    background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    linear-gradient(0deg, #211F20, #211F20);
+    height: 550px;
+}
