@@ -1,9 +1,44 @@
-@import "base/abstract";
+@import "base/constant";
 @import "base/fonts";
+@import "base/buttons";
 
+header {
+    @extend %innerContainer;
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    align-items: center;
+}
 .header-container {
     @extend %container;
-    background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    min-height: 500px;
+    background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%),
     linear-gradient(0deg, #211F20, #211F20);
-    height: 550px;
+}
+.logo {
+    margin-right: auto;
+}
+.logo p {
+    text-align: center;
+}
+.header-nav a {
+    margin-left: 35px;
+}
+.not-only {
+    @extend %innerContainer;
+    display: flex;
+}
+.not-only-content {
+    margin-right: auto;
+    margin-top: 163px;
+    width: 460px;
+}
+h2 {
+    padding-bottom: 40px;
+}
+.not-only-image {
+    background-image: url("../../assets/images/start-screen-puppy.png");
+    background-repeat: no-repeat;
+    height: 728px;
+    width: 698px;
 }
