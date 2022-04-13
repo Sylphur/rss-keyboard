@@ -27,7 +27,6 @@
 header {
     @include innerContainer(60px);
     display: flex;
-    padding-bottom: 60px;
     align-items: center;
 }
 .not-only {
@@ -55,6 +54,7 @@ header {
     padding-bottom: $wrapperBigBottomPadding;
     display: flex;
     justify-content: center;
+    align-items: center;
     column-gap: 30px;
 }
 footer {
@@ -67,11 +67,14 @@ footer {
 .logo {
     margin-right: auto;
 }
+h1 {
+    padding-bottom: 13px;
+}
 .logo p {
     text-align: center;
 }
 .header-nav a {
-    margin-left: 35px;
+    margin-left: 31px;
 }
 .not-only-content {
     margin-right: auto;
@@ -101,6 +104,10 @@ h2 {
 .about-content {
     width: 430px;
     padding-right: 175px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    justify-content: center;
 }
 .our-friends-wrapper h3 {
     text-align: center;
@@ -127,6 +134,10 @@ h2 {
     flex-wrap: wrap;
     column-gap: 120px;
     row-gap: 55px;
+}
+.donations-wrapper img {
+    display: block;
+    max-height: 261px;
 }
 .donations-content {
     display: flex;

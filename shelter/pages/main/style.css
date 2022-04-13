@@ -80,6 +80,7 @@ h4 {
 
 footer h4 {
   color: #F1CDB3;
+  text-align: start;
 }
 
 h5 {
@@ -259,7 +260,6 @@ header {
   margin: 0px auto;
   padding-top: 60px;
   display: flex;
-  padding-bottom: 60px;
   align-items: center;
 }
 
@@ -302,6 +302,7 @@ header {
   padding-bottom: 100px;
   display: flex;
   justify-content: center;
+  align-items: center;
   column-gap: 30px;
 }
 
@@ -317,12 +318,16 @@ footer {
   margin-right: auto;
 }
 
+h1 {
+  padding-bottom: 13px;
+}
+
 .logo p {
   text-align: center;
 }
 
 .header-nav a {
-  margin-left: 35px;
+  margin-left: 31px;
 }
 
 .not-only-content {
@@ -358,6 +363,10 @@ h2 {
 .about-content {
   width: 430px;
   padding-right: 175px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  justify-content: center;
 }
 
 .our-friends-wrapper h3 {
@@ -389,6 +398,11 @@ h2 {
   flex-wrap: wrap;
   column-gap: 120px;
   row-gap: 55px;
+}
+
+.donations-wrapper img {
+  display: block;
+  max-height: 261px;
 }
 
 .donations-content {
