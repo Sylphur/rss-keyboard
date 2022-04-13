@@ -55,6 +55,7 @@
 }
 .slider-change:hover {
     background-color: $color-primary-light;
+    border: 2px solid $color-primary-light;
 }
 .slider-change.disabled {
     cursor: unset;
@@ -85,4 +86,6 @@
 }
 .btn-center:hover {
     background-color: $color-primary;
+    border: 2px solid $color-primary;
+
 }
