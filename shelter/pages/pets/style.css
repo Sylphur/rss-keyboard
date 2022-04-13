@@ -217,6 +217,10 @@ header {
   background-color: #F1CDB3;
 }
 
+.btn-center:hover {
+  background-color: #F1CDB3;
+}
+
 .pet-card {
   width: 270px;
   height: 435px;
