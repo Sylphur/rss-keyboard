@@ -1,9 +1,176 @@
-@import "base/abstract";
+@import "base/constant";
 @import "base/fonts";
+@import "base/buttons";
+@import "base/cards";
+
+
+                    // containers 
 
 .header-container {
     @extend %container;
-    background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%),
     linear-gradient(0deg, #211F20, #211F20);
-    height: 550px;
+}
+.white-container {
+    @extend %container;
+    background-color: #fff;
+}
+.grey-container {
+    @extend %container;
+    background-color: $color-light-i;
+}
+.footer-container {
+    @extend %container;
+    background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%),
+    linear-gradient(0deg, #211F20, #211F20);
+}
+
+                    // wrappers
+header {
+    @include innerContainer(60px);
+    display: flex;
+    align-items: center;
+}
+.not-only {
+    @include innerContainer(60px);
+    display: flex;
+}
+.about-wrapper {
+    @include innerContainer();
+    display: flex;
+    padding-bottom: $wrapperBigBottomPadding;
+    height: auto;
+}
+.our-friends-wrapper {
+    @include innerContainer();
+    padding-bottom: $wrapperBigBottomPadding;
+    align-items: center;
+}
+.help-wrapper {
+    @include innerContainer();
+    padding-bottom: $wrapperBigBottomPadding;
+    text-align: center;
+}
+.donations-wrapper {
+    @include innerContainer();
+    padding-bottom: $wrapperBigBottomPadding;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+}
+footer {
+    @include innerContainer(40px);
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    margin-right: auto;
+}
+h1 {
+    padding-bottom: 13px;
+}
+.logo p {
+    text-align: center;
+}
+.header-nav a {
+    margin-left: 31px;
+}
+.not-only-content {
+    margin-right: auto;
+    margin-top: 163px;
+    width: 460px;
+}
+h2 {
+    padding-bottom: 40px;
+}
+.not-only-image {
+    background-image: url("../../assets/images/start-screen-puppy.png");
+    background-repeat: no-repeat;
+    height: 728px;
+    width: 698px;
+}
+.not-only-content p {
+    padding-bottom: 42px;
+}
+.about-image {
+    background-image: url("../../assets/images/about-pets.png");
+    background-repeat: no-repeat;
+    height: 408px;
+    width: 300px;
+    margin-left: 175px;
+    margin-right: auto;
+}
+.about-content {
+    width: 430px;
+    padding-right: 175px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    justify-content: center;
+}
+.our-friends-wrapper h3 {
+    text-align: center;
+}
+.our-friends-slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.our-friends-cards {
+    display: flex;
+    column-gap: 90px;
+}
+.our-friends-button-container {
+    display: flex;
+    justify-content: center;
+}
+.help-cards-wrapper {
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 120px;
+    row-gap: 55px;
+}
+.donations-wrapper img {
+    display: block;
+    max-height: 261px;
+}
+.donations-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.card-number {
+    width: 350px;
+    height: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+    background-color: $color-primary;
+    border-radius: 9px;
+    transition: $transition-yes;
+}
+.card-number:hover {
+    background-color: $color-primary-light;
+}
+.donation-description {
+    max-width: 380px;
+}
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 16px;
+    height: 234px;
+}
+.footer-element {
+    color: $color-primary;
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
 }

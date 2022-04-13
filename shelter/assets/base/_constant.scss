@@ -1,0 +1,24 @@
+$color-dark-s: #CDCDCD;
+$color-dark-3x1: #292929;
+$color-dark-l: #545454;
+$color-dark-xl: #4C4C4C;
+$color-dark-m: #B2B2B2;
+$color-primary: #F1CDB3;
+$color-primary-light: #FDDCC4;
+$color-light-s: #FAFAFA;
+$color-light-i : #F6F6F6;
+
+$largeWidth: 1200px;
+$wrapperBigBottomPadding: 100px;
+
+$transition-yes: 0.1s linear;
+
+%container {
+    max-width: 1280px;
+    margin: 0px auto;
+}
+@mixin innerContainer ($paddTop: 80px) {
+    max-width: $largeWidth;
+    margin: 0px auto;
+    padding-top: $paddTop;
+}

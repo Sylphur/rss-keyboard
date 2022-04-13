@@ -17,7 +17,6 @@
     letter-spacing: 0.06em;
 }
 
-
 @font-face {
     font-family: Arial, Helvetica, sans-serif;
     src: url(arialmt.ttf);
@@ -33,7 +32,7 @@ h1 {
     font-size: 32px;
     line-height: 110%;
     letter-spacing: 0.06em;
-    color: $color-primary;
+    color: $color-dark-l;
 }
 h2 {
     font-family: 'Georgia';
@@ -90,30 +89,22 @@ h5 {
     }
 .header-nav a {
     @extend %paragraph-1;
-    color: $color-dark-s;
+    color: $color-dark-l;
     transition: $transition-yes;
 }
-.header-nav a:first-child {
-    color: $color-light-s;
-    border-bottom: 2px solid $color-primary;
+.header-nav a:nth-child(2) {
+    color: $color-dark-3x1;
+    border-bottom: 3px solid $color-primary;
 }
 .header-nav a:hover {
-    color: $color-light-s;
-    border-bottom: 2px solid $color-primary;
+    color: $color-dark-3x1;
+    border-bottom: 3px solid $color-primary;
 }
-.not-only-content p {
-    @extend %paragraph-1;
-    color: $color-dark-s;
+
+header {
+    color: $color-dark-3x1;
 }
-.about-content p {
-    @extend %paragraph-1;
-    color: $color-dark-xl;
-}
-.donation-description {
-    font-family: 'Arial';
-    font-style: italic;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 18px;
-    color: $color-dark-m;
+
+.header-nav a:hover {
+    color: $color-dark-3x1;
 }

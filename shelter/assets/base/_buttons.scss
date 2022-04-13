@@ -1,0 +1,85 @@
+.button-primary {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: $color-dark-3x1;
+
+    width: 207px;
+    height: 52px;
+    background-color: $color-primary;
+    padding: 0;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+
+    transition: $transition-yes;
+    
+}
+.button-primary:hover {
+        background-color: $color-primary-light;
+}
+.button-secondary {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    background-color: $color-light-s;
+
+    width: 187px;
+    height: 52px;
+    padding: 0;
+    border: 2px solid $color-primary;
+    border-radius: 100px;
+    cursor: pointer;
+
+    transition: $transition-yes;
+}
+.button-secondary:hover {
+        background-color: $color-primary-light;
+}
+.slider-change {
+    background-color: unset;
+    color: $color-dark-3x1;
+    width: 57px;
+    height: 57px;
+    padding: 0;
+    border: 2px solid $color-primary;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: $transition-yes;
+}
+.slider-change:hover {
+    background-color: $color-primary-light;
+}
+.slider-change.disabled {
+    cursor: unset;
+    color: $color-dark-s;
+    border: 2px solid $color-dark-s;
+    background-color: unset;
+}
+.slider-change.disabled h4 {
+    color: $color-dark-s;
+}
+.slider-left {
+    background-image: url("../../assets/icons/Arrow.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.slider-right {
+    background-image: url("../../assets/icons/Arrow.png");
+    transform: rotate(180deg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.our-friends-button {
+    width: 261px;
+}
+.btn-center {
+    cursor: unset;
+    background-color: $color-primary;
+}
