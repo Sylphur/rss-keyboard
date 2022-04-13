@@ -1,4 +1,4 @@
-.grey-container, .white-container, .header-container {
+.footer-container, .grey-container, .white-container, .header-container {
   max-width: 1280px;
   margin: 0px auto;
 }
@@ -63,6 +63,10 @@ h3 {
   color: #545454;
 }
 
+footer h3 {
+  color: #fff;
+}
+
 h4 {
   font-family: "Georgia";
   font-style: normal;
@@ -70,6 +74,20 @@ h4 {
   font-size: 20px;
   line-height: 115%;
   text-align: center;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+
+footer h4 {
+  color: #F1CDB3;
+}
+
+h5 {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 110%;
   letter-spacing: 0.06em;
   color: #545454;
 }
@@ -104,6 +122,15 @@ h4 {
 
 .about-content p {
   color: #4C4C4C;
+}
+
+.donation-description {
+  font-family: "Arial";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #B2B2B2;
 }
 
 .button-primary {
@@ -223,6 +250,10 @@ h4 {
   background-color: #F6F6F6;
 }
 
+.footer-container {
+  background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), linear-gradient(0deg, #211F20, #211F20);
+}
+
 header {
   max-width: 1200px;
   margin: 0px auto;
@@ -271,6 +302,15 @@ header {
   padding-bottom: 100px;
   display: flex;
   justify-content: center;
+  column-gap: 30px;
+}
+
+footer {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo {
@@ -349,6 +389,47 @@ h2 {
   flex-wrap: wrap;
   column-gap: 120px;
   row-gap: 55px;
+}
+
+.donations-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.card-number {
+  width: 350px;
+  height: 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 15px;
+  background-color: #F1CDB3;
+  border-radius: 9px;
+  transition: 0.1s linear;
+}
+
+.card-number:hover {
+  background-color: #FDDCC4;
+}
+
+.donation-description {
+  max-width: 380px;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 16px;
+  height: 234px;
+}
+
+.footer-element {
+  color: #F1CDB3;
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */

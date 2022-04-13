@@ -17,6 +17,11 @@
     @extend %container;
     background-color: $color-light-i;
 }
+.footer-container {
+    @extend %container;
+    background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%),
+    linear-gradient(0deg, #211F20, #211F20);
+}
 
                     // wrappers
 header {
@@ -50,6 +55,12 @@ header {
     padding-bottom: $wrapperBigBottomPadding;
     display: flex;
     justify-content: center;
+    column-gap: 30px;
+}
+footer {
+    @include innerContainer(40px);
+    display: flex;
+    justify-content: space-between;
 }
 
                     // end of wrappers
@@ -116,4 +127,39 @@ h2 {
     flex-wrap: wrap;
     column-gap: 120px;
     row-gap: 55px;
+}
+.donations-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.card-number {
+    width: 350px;
+    height: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+    background-color: $color-primary;
+    border-radius: 9px;
+    transition: $transition-yes;
+}
+.card-number:hover {
+    background-color: $color-primary-light;
+}
+.donation-description {
+    max-width: 380px;
+}
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 16px;
+    height: 234px;
+}
+.footer-element {
+    color: $color-primary;
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
 }
