@@ -14,6 +14,9 @@
     border: none;
     border-radius: 100px;
     cursor: pointer;
+
+    transition: $transition-yes;
+    
 }
 .button-primary:hover {
         background-color: $color-primary-light;
@@ -25,14 +28,46 @@
     font-size: 17px;
     line-height: 130%;
     letter-spacing: 0.06em;
+    background-color: none;
     color: $color-dark-3x1;
+
     width: 207px;
     height: 52px;
     padding: 0;
-    border: 2px solid #F1CDB3;
+    border: 2px solid $color-primary;
     border-radius: 100px;
     cursor: pointer;
+
+    transition: $transition-yes;
 }
 .button-secondary:hover {
         background-color: $color-primary-light;
+}
+.slider-change {
+    background-color: none;
+    color: $color-dark-3x1;
+    width: 57px;
+    height: 57px;
+    padding: 0;
+    border: 2px solid $color-primary;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: $transition-yes;
+}
+.slider-change:hover {
+    background-color: $color-primary-light;
+}
+.slider-left {
+    background-image: url("/assets/icons/Arrow.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.slider-right {
+    background-image: url("/assets/icons/Arrow.png");
+    transform: rotate(180deg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.our-friends-button {
+    width: 261px;
 }

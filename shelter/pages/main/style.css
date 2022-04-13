@@ -12,6 +12,17 @@
   align-items: center;
 }
 
+.pet-card p {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
 @font-face {
   font-family: Arial, Helvetica, sans-serif;
   src: url(arialmt.ttf);
@@ -52,6 +63,17 @@ h3 {
   color: #545454;
 }
 
+h4 {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+
 .logo p {
   font-family: "Arial";
   font-style: normal;
@@ -63,7 +85,7 @@ h3 {
 
 .header-nav a {
   color: #CDCDCD;
-  transition: 0.05s linear;
+  transition: 0.1s linear;
 }
 
 .header-nav a:first-child {
@@ -99,6 +121,7 @@ h3 {
   border: none;
   border-radius: 100px;
   cursor: pointer;
+  transition: 0.1s linear;
 }
 
 .button-primary:hover {
@@ -112,6 +135,7 @@ h3 {
   font-size: 17px;
   line-height: 130%;
   letter-spacing: 0.06em;
+  background-color: none;
   color: #292929;
   width: 207px;
   height: 52px;
@@ -119,10 +143,76 @@ h3 {
   border: 2px solid #F1CDB3;
   border-radius: 100px;
   cursor: pointer;
+  transition: 0.1s linear;
 }
 
 .button-secondary:hover {
   background-color: #FDDCC4;
+}
+
+.slider-change {
+  background-color: none;
+  color: #292929;
+  width: 57px;
+  height: 57px;
+  padding: 0;
+  border: 2px solid #F1CDB3;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: 0.1s linear;
+}
+
+.slider-change:hover {
+  background-color: #FDDCC4;
+}
+
+.slider-left {
+  background-image: url("/assets/icons/Arrow.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slider-right {
+  background-image: url("/assets/icons/Arrow.png");
+  transform: rotate(180deg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.our-friends-button {
+  width: 261px;
+}
+
+.pet-card {
+  width: 270px;
+  height: 435px;
+  background-color: #FAFAFA;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  align-items: center;
+  transition: 0.1s linear;
+}
+
+.pet-card:hover {
+  box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+}
+
+.pet-card:hover > button {
+  background-color: #FDDCC4;
+  transition: 0.2s linear;
+}
+
+.pet-card p {
+  color: #545454;
+}
+
+.help-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
 }
 
 .header-container {
@@ -162,7 +252,25 @@ header {
   max-width: 1200px;
   margin: 0px auto;
   padding-top: 80px;
-  padding-bottom: 60px;
+  padding-bottom: 100px;
+  align-items: center;
+}
+
+.help-wrapper {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding-top: 80px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.donations-wrapper {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding-top: 80px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
 }
 
 .logo {
@@ -216,8 +324,31 @@ h2 {
   text-align: center;
 }
 
+.our-friends-slider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .our-friends-cards {
   display: flex;
+  column-gap: 90px;
+}
+
+.our-friends-button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.help-cards-wrapper {
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 120px;
+  row-gap: 55px;
 }
 
 /*# sourceMappingURL=style.css.map */

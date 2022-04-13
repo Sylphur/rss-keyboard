@@ -1,6 +1,7 @@
 @import "base/constant";
 @import "base/fonts";
 @import "base/buttons";
+@import "base/cards";
 
                     // containers 
 
@@ -31,13 +32,27 @@ header {
 .about-wrapper {
     @include innerContainer();
     display: flex;
-    padding-bottom: 100px;
+    padding-bottom: $wrapperBigBottomPadding;
     height: auto;
 }
 .our-friends-wrapper {
     @include innerContainer();
-    padding-bottom: 60px;
+    padding-bottom: $wrapperBigBottomPadding;
+    align-items: center;
 }
+.help-wrapper {
+    @include innerContainer();
+    padding-bottom: $wrapperBigBottomPadding;
+    text-align: center;
+}
+.donations-wrapper {
+    @include innerContainer();
+    padding-bottom: $wrapperBigBottomPadding;
+    display: flex;
+    justify-content: center;
+}
+
+                    // end of wrappers
 .logo {
     margin-right: auto;
 }
@@ -79,6 +94,26 @@ h2 {
 .our-friends-wrapper h3 {
     text-align: center;
 }
+.our-friends-slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 .our-friends-cards {
     display: flex;
+    column-gap: 90px;
+}
+.our-friends-button-container {
+    display: flex;
+    justify-content: center;
+}
+.help-cards-wrapper {
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 120px;
+    row-gap: 55px;
 }
