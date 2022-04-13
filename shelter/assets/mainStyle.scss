@@ -3,6 +3,7 @@
 @import "base/buttons";
 @import "base/cards";
 
+
                     // containers 
 
 .header-container {
@@ -12,6 +13,7 @@
 }
 .white-container {
     @extend %container;
+    background-color: #fff;
 }
 .grey-container {
     @extend %container;
@@ -62,8 +64,6 @@ footer {
     display: flex;
     justify-content: space-between;
 }
-
-                    // end of wrappers
 .logo {
     margin-right: auto;
 }

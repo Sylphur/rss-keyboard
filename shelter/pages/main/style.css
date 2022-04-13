@@ -163,9 +163,8 @@ h5 {
   font-size: 17px;
   line-height: 130%;
   letter-spacing: 0.06em;
-  background-color: none;
-  color: #292929;
-  width: 207px;
+  background-color: #FAFAFA;
+  width: 187px;
   height: 52px;
   padding: 0;
   border: 2px solid #F1CDB3;
@@ -179,7 +178,7 @@ h5 {
 }
 
 .slider-change {
-  background-color: none;
+  background-color: unset;
   color: #292929;
   width: 57px;
   height: 57px;
@@ -194,14 +193,25 @@ h5 {
   background-color: #FDDCC4;
 }
 
+.slider-change.disabled {
+  cursor: unset;
+  color: #CDCDCD;
+  border: 2px solid #CDCDCD;
+  background-color: unset;
+}
+
+.slider-change.disabled h4 {
+  color: #CDCDCD;
+}
+
 .slider-left {
-  background-image: url("/assets/icons/Arrow.png");
+  background-image: url("../../assets/icons/Arrow.png");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .slider-right {
-  background-image: url("/assets/icons/Arrow.png");
+  background-image: url("../../assets/icons/Arrow.png");
   transform: rotate(180deg);
   background-repeat: no-repeat;
   background-position: center;
@@ -209,6 +219,11 @@ h5 {
 
 .our-friends-button {
   width: 261px;
+}
+
+.btn-center {
+  cursor: unset;
+  background-color: #F1CDB3;
 }
 
 .pet-card {
@@ -245,6 +260,10 @@ h5 {
 
 .header-container {
   background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), linear-gradient(0deg, #211F20, #211F20);
+}
+
+.white-container {
+  background-color: #fff;
 }
 
 .grey-container {
