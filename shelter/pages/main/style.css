@@ -191,6 +191,7 @@ h5 {
 
 .slider-change:hover {
   background-color: #FDDCC4;
+  border: 2px solid #FDDCC4;
 }
 
 .slider-change.disabled {
@@ -228,6 +229,7 @@ h5 {
 
 .btn-center:hover {
   background-color: #F1CDB3;
+  border: 2px solid #F1CDB3;
 }
 
 .pet-card {

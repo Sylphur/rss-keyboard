@@ -87,6 +87,9 @@ h5 {
     line-height: 15px;
     letter-spacing: 0.1em;
     }
+.logo a {
+    color: $color-dark-3x1
+}
 .header-nav a {
     @extend %paragraph-1;
     color: $color-dark-l;

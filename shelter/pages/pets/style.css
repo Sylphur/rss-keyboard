@@ -102,6 +102,10 @@ h5 {
   letter-spacing: 0.1em;
 }
 
+.logo a {
+  color: #292929;
+}
+
 .header-nav a {
   color: #545454;
   transition: 0.1s linear;
@@ -182,6 +186,7 @@ header {
 
 .slider-change:hover {
   background-color: #FDDCC4;
+  border: 2px solid #FDDCC4;
 }
 
 .slider-change.disabled {
@@ -219,6 +224,7 @@ header {
 
 .btn-center:hover {
   background-color: #F1CDB3;
+  border: 2px solid #F1CDB3;
 }
 
 .pet-card {
@@ -297,7 +303,7 @@ footer {
 }
 
 h1 {
-  padding-bottom: 13px;
+  padding-bottom: 10px;
 }
 
 .logo p {
