@@ -204,12 +204,22 @@ header {
   background-repeat: no-repeat;
   background-position: center;
 }
+@media (max-width: 767px) {
+  .slider-left {
+    order: 2;
+  }
+}
 
 .slider-right {
   background-image: url("../../assets/icons/Arrow.png");
   transform: rotate(180deg);
   background-repeat: no-repeat;
   background-position: center;
+}
+@media (max-width: 767px) {
+  .slider-right {
+    order: 3;
+  }
 }
 
 .our-friends-button {
@@ -238,6 +248,18 @@ header {
   transition: 0.1s linear;
 }
 
+@media (max-width: 1279px) {
+  .pet-card:last-child {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .pet-card:nth-child(2n) {
+    display: none;
+  }
+}
+
 .pet-card:hover {
   box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
 }
@@ -257,6 +279,28 @@ header {
   align-items: center;
   row-gap: 30px;
 }
+@media (max-width: 1279px) {
+  .help-card {
+    width: 170px;
+    height: 113px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 767px) {
+  .help-card {
+    width: 130px;
+    height: 87px;
+    row-gap: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .help-card img {
+    width: 50px;
+    height: 50px;
+  }
+}
 
 .header-container {
   background-color: #fff;
@@ -275,26 +319,65 @@ header {
 header {
   max-width: 1200px;
   margin: 0px auto;
-  padding-top: 30px;
+  padding: 30px 40px 0px 40px;
   display: flex;
   align-items: center;
   padding-bottom: 30px;
+}
+@media (max-width: 1279px) {
+  header {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media (max-width: 767px) {
+  header {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 42px;
+  }
 }
 
 .our-pets-wrapper {
   max-width: 1200px;
   margin: 0px auto;
-  padding-top: 80px;
+  padding: 80px 40px 0px 40px;
   text-align: center;
   padding-bottom: 100px;
+}
+@media (max-width: 1279px) {
+  .our-pets-wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .our-pets-wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 42px;
+  }
 }
 
 footer {
   max-width: 1200px;
   margin: 0px auto;
-  padding-top: 40px;
+  padding: 40px 40px 0px 40px;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 1279px) {
+  footer {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media (max-width: 767px) {
+  footer {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 42px;
+  }
 }
 
 .logo {
@@ -318,8 +401,8 @@ h1 {
 }
 
 .cards-container {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   column-gap: 40px;
   row-gap: 30px;
   padding-top: 15px;
@@ -327,7 +410,7 @@ h1 {
 
 .cards-navigation {
   margin: auto;
-  padding-top: 50px;
+  padding-top: 55px;
   display: flex;
   justify-content: center;
   column-gap: 20px;

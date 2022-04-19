@@ -51,15 +51,15 @@ h1 {
     padding-bottom: 45px;
 }
 .cards-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     column-gap: 40px;
     row-gap: 30px;
     padding-top: 15px;
 }
 .cards-navigation {
     margin: auto;
-    padding-top: 50px;
+    padding-top: 55px;
     display: flex;
     justify-content: center;
     column-gap: 20px;
