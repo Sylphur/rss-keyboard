@@ -24,16 +24,40 @@ header {
     display: flex;
     align-items: center;
     padding-bottom: 30px;
+    @media (max-width: $breakpoint-1) {
+        padding-top: 30px;
+    }
 }
 .our-pets-wrapper {
     @include innerContainer();
     text-align: center;
     padding-bottom: 100px;
+    @media (max-width: $breakpoint-1) {
+        padding-bottom: 76px;
+    }
+    @media (max-width: $breakpoint-2) {
+        padding-bottom: 42px;
+    }
 }
 footer {
     @include innerContainer(40px);
     display: flex;
     justify-content: space-between;
+    @media (max-width: $breakpoint-1) {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 65px;
+        column-gap: 50px;
+        padding-top: 30px;
+    }
+    @media (max-width: $breakpoint-2) {
+        row-gap: 40px;
+    }
+}
+.footer-img {
+    @media (max-width: $breakpoint-2) {
+        width: 260px;
+    }
 }
 .logo {
     margin-right: auto;
@@ -46,9 +70,30 @@ h1 {
 }
 .header-nav a {
     margin-left: 31px;
+    @media (max-width: $breakpoint-2) {
+        display: none;
+    }
 }
 .our-pets-wrapper h3 {
     padding-bottom: 45px;
+    @media (max-width: $breakpoint-1) {
+        padding-bottom: 30px;
+    }
+    @media (max-width: $breakpoint-1) {
+        padding-bottom: 42px;
+    }
+
+}
+.burger {
+    display: none;
+    background-image: url("../../assets/icons/burger.png");
+    background-repeat: no-repeat;
+    @media (max-width: $breakpoint-2) {
+        display: block;
+        width: 30px;
+        height: 22px;
+        margin-right: 43px;
+    }
 }
 .cards-container {
     display: grid;
@@ -56,6 +101,35 @@ h1 {
     column-gap: 40px;
     row-gap: 30px;
     padding-top: 15px;
+    @media (max-width: $breakpoint-1) {
+        grid-template-columns: 1fr 1fr;
+        width: 54vw;
+        min-width: 580px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 0;
+    }
+    @media (max-width: $breakpoint-2) {
+        grid-template-columns: 1fr;
+        min-width: 280px;
+    }
+}
+.pet-card {
+    @media (max-width: $breakpoint-1) {
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+}
+.card-4, .card-5, .card-6 {
+    @media (max-width: $breakpoint-2) {
+        display: none;
+    }
+}
+.card-7, .card-8 {
+    @media (max-width: $breakpoint-1) {
+        display: none;
+    }
 }
 .cards-navigation {
     margin: auto;
@@ -63,6 +137,12 @@ h1 {
     display: flex;
     justify-content: center;
     column-gap: 20px;
+    @media (max-width: $breakpoint-1) {
+        padding-top: 40px;
+    }
+    @media (max-width: $breakpoint-2) {
+        column-gap: 10px;
+    }
 }
 .footer-col {
     display: flex;
@@ -70,10 +150,27 @@ h1 {
     justify-content: space-between;
     padding-top: 16px;
     height: 234px;
+    @media (max-width: $breakpoint-1) {
+        padding-top: 0;
+    }
+    @media (max-width: $breakpoint-2) {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        align-items: center;
+        gap: 40px;
+    }
+}
+.footer-col h3 {
+    width: 290px;
 }
 .footer-element {
     color: $color-primary;
     display: flex;
     column-gap: 20px;
     align-items: center;
+}
+.london {
+    margin-right: 10px;
+    padding-right: 20px;
 }

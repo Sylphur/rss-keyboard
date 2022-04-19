@@ -143,14 +143,6 @@ h1 {
         margin-right: 43px;
     }
 }
-.hamburger-btn:before {
-    content: "";
-    position: absolute;
-    top: 9px;
-    left: 0px;
-    width: 100%;
-    border-top: 5px solid $color-primary;
-}
 .button-wrap {
     @media (max-width: $breakpoint-1) {
         text-align: center;
@@ -252,6 +244,16 @@ h2 {
         column-gap: 40px;
     }
 }
+.pet-card:last-child {
+    @media (max-width: $breakpoint-1) {
+        display: none;
+    }
+}
+.pet-card:nth-child(2n) {
+    @media (max-width: $breakpoint-2) {
+        display: none;
+    }
+}
 .our-friends-button-container {
     display: flex;
     justify-content: center;
@@ -346,4 +348,8 @@ h2 {
     display: flex;
     column-gap: 20px;
     align-items: center;
+}
+.london {
+    margin-right: 10px;
+    padding-right: 20px;
 }

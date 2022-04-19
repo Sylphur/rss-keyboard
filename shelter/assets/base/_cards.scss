@@ -9,16 +9,6 @@
     align-items: center;
     transition: $transition-yes;
 }
-.pet-card:last-child {
-    @media (max-width: $breakpoint-1) {
-        display: none;
-    }
-}
-.pet-card:nth-child(2n) {
-    @media (max-width: $breakpoint-2) {
-        display: none;
-    }
-}
 .pet-card:hover {
     box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
 }
