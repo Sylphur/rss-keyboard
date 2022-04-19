@@ -86,7 +86,7 @@ h1 {
 }
 .burger {
     display: none;
-    background-image: url("../../assets/icons/Burger-dark.png");
+    background-image: url("../../assets/images/burger-dark.svg");
     background-repeat: no-repeat;
     @media (max-width: $breakpoint-2) {
         display: block;
