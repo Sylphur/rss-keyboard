@@ -79,14 +79,14 @@ h1 {
     @media (max-width: $breakpoint-1) {
         padding-bottom: 30px;
     }
-    @media (max-width: $breakpoint-1) {
+    @media (max-width: $breakpoint-2) {
         padding-bottom: 42px;
     }
 
 }
 .burger {
     display: none;
-    background-image: url("../../assets/icons/burger.png");
+    background-image: url("../../assets/icons/Burger-dark.png");
     background-repeat: no-repeat;
     @media (max-width: $breakpoint-2) {
         display: block;
