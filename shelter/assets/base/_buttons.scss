@@ -70,12 +70,18 @@
     background-image: url("../../assets/icons/Arrow.png");
     background-repeat: no-repeat;
     background-position: center;
+    @media (max-width: $breakpoint-2) {
+        order: 2;
+    }
 }
 .slider-right {
     background-image: url("../../assets/icons/Arrow.png");
     transform: rotate(180deg);
     background-repeat: no-repeat;
     background-position: center;
+    @media (max-width: $breakpoint-2) {
+        order: 3;
+    }
 }
 .our-friends-button {
     width: 261px;

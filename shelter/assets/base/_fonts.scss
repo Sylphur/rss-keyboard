@@ -16,6 +16,14 @@
     text-align: center;
     letter-spacing: 0.06em;
 }
+@mixin h3-mobile (){
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+}
 
 
 @font-face {
@@ -43,6 +51,9 @@ h2 {
     line-height: 130%;
     align-items: center;
     color: white;
+    @media (max-width: $breakpoint-2) {
+        @include h3-mobile();
+    }
 }
 h3 {
     font-family: 'Georgia';
@@ -53,6 +64,9 @@ h3 {
     align-items: center;
     letter-spacing: 0.06em;
     color: $color-dark-l;
+    @media (max-width: $breakpoint-2) {
+        @include h3-mobile();
+    }
 }
 footer h3 {
     color: #fff;
@@ -66,6 +80,10 @@ h4 {
     text-align: center;
     letter-spacing: 0.06em;
     color: $color-dark-l;
+    @media (max-width: $breakpoint-2) {
+        font-size: 15px;
+        line-height: 110%;
+    }
 }
 footer h4 {
     color: $color-primary;
@@ -79,6 +97,9 @@ h5 {
     line-height: 110%;
     letter-spacing: 0.06em;
     color: $color-dark-l;
+    @media (max-width: $breakpoint-2) {
+        letter-spacing: normal;
+    }
 }
 .logo p {
     font-family: 'Arial';
@@ -115,4 +136,9 @@ h5 {
     font-size: 12px;
     line-height: 18px;
     color: $color-dark-m;
+}
+footer h4 {
+    @media (max-width: $breakpoint-2) {
+        font-size: 20px;
+    }
 }
