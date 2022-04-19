@@ -30,16 +30,31 @@ header {
     @include innerContainer(60px);
     display: flex;
     align-items: center;
+    @media (max-width: $breakpoint-1) {
+        padding-top: 30px;
+    }
 }
 .not-only {
     @include innerContainer(60px);
     display: flex;
+    justify-content: space-between;
+    @media (max-width: $breakpoint-1) {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 .about-wrapper {
     @include innerContainer();
     display: flex;
+    justify-content: center;
+    gap: 120px;
     padding-bottom: $wrapperBigBottomPadding;
     height: auto;
+    @media (max-width: $breakpoint-1) {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 80px;
+    }
 }
 .our-friends-wrapper {
     @include innerContainer();
@@ -58,11 +73,23 @@ header {
     justify-content: center;
     align-items: center;
     column-gap: 30px;
+    @media (max-width: $breakpoint-1) {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 60px;
+    }
 }
 footer {
     @include innerContainer(40px);
     display: flex;
     justify-content: space-between;
+    @media (max-width: $breakpoint-1) {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 65px;
+        column-gap: 60px;
+        padding-top: 30px;
+    }
 }
 .logo {
     margin-right: auto;
@@ -77,33 +104,38 @@ h1 {
     margin-left: 31px;
 }
 .not-only-content {
-    margin-right: auto;
     margin-top: 163px;
     width: 460px;
+    @media (max-width: $breakpoint-1) {
+        margin-top: 0;
+        margin-bottom: 100px;
+    }
+}
+.button-wrap {
+    @media (max-width: $breakpoint-1) {
+        text-align: center;
+    }
 }
 h2 {
     padding-bottom: 40px;
 }
 .not-only-image {
-    background-image: url("../../assets/images/start-screen-puppy.png");
-    background-repeat: no-repeat;
-    height: 728px;
-    width: 698px;
+    display: block;
+
+    @media (max-width: $breakpoint-1) {
+        margin-left: auto;
+        width: 54vw;
+        min-width: 569px;
+    }
 }
 .not-only-content p {
     padding-bottom: 42px;
 }
 .about-image {
-    background-image: url("../../assets/images/about-pets.png");
-    background-repeat: no-repeat;
-    height: 408px;
-    width: 300px;
-    margin-left: 175px;
-    margin-right: auto;
+    display: block;
 }
 .about-content {
     width: 430px;
-    padding-right: 175px;
     display: flex;
     flex-direction: column;
     row-gap: 25px;
@@ -122,6 +154,9 @@ h2 {
 .our-friends-cards {
     display: flex;
     column-gap: 90px;
+    @media (max-width: $breakpoint-1) {
+        column-gap: 40px;
+    }
 }
 .our-friends-button-container {
     display: flex;
@@ -134,6 +169,17 @@ h2 {
     flex-wrap: wrap;
     column-gap: 120px;
     row-gap: 55px;
+    @media (max-width: $breakpoint-1) {
+        width:82vw;
+        min-width: 630px;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 60px;
+        row-gap: 55px;
+        
+    }
 }
 .donations-wrapper img {
     display: block;
@@ -167,6 +213,9 @@ h2 {
     justify-content: space-between;
     padding-top: 16px;
     height: 234px;
+    @media (max-width: $breakpoint-1) {
+        padding-top: 0;
+    }
 }
 .footer-element {
     color: $color-primary;
