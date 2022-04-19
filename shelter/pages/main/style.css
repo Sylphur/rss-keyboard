@@ -51,6 +51,16 @@ h2 {
   align-items: center;
   color: white;
 }
+@media (max-width: 767px) {
+  h2 {
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+  }
+}
 
 h3 {
   font-family: "Georgia";
@@ -61,6 +71,16 @@ h3 {
   align-items: center;
   letter-spacing: 0.06em;
   color: #545454;
+}
+@media (max-width: 767px) {
+  h3 {
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+  }
 }
 
 footer h3 {
@@ -77,6 +97,12 @@ h4 {
   letter-spacing: 0.06em;
   color: #545454;
 }
+@media (max-width: 767px) {
+  h4 {
+    font-size: 15px;
+    line-height: 110%;
+  }
+}
 
 footer h4 {
   color: #F1CDB3;
@@ -91,6 +117,11 @@ h5 {
   line-height: 110%;
   letter-spacing: 0.06em;
   color: #545454;
+}
+@media (max-width: 767px) {
+  h5 {
+    letter-spacing: normal;
+  }
 }
 
 .logo p {
@@ -131,6 +162,12 @@ h5 {
   font-size: 12px;
   line-height: 18px;
   color: #B2B2B2;
+}
+
+@media (max-width: 767px) {
+  footer h4 {
+    font-size: 20px;
+  }
 }
 
 .button-primary {
@@ -209,12 +246,22 @@ h5 {
   background-repeat: no-repeat;
   background-position: center;
 }
+@media (max-width: 767px) {
+  .slider-left {
+    order: 2;
+  }
+}
 
 .slider-right {
   background-image: url("../../assets/icons/Arrow.png");
   transform: rotate(180deg);
   background-repeat: no-repeat;
   background-position: center;
+}
+@media (max-width: 767px) {
+  .slider-right {
+    order: 3;
+  }
 }
 
 .our-friends-button {
@@ -249,6 +296,12 @@ h5 {
   }
 }
 
+@media (max-width: 767px) {
+  .pet-card:nth-child(2n) {
+    display: none;
+  }
+}
+
 .pet-card:hover {
   box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
 }
@@ -274,6 +327,20 @@ h5 {
     height: 113px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@media (max-width: 767px) {
+  .help-card {
+    width: 130px;
+    height: 87px;
+    row-gap: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .help-card img {
+    width: 50px;
+    height: 50px;
   }
 }
 
@@ -306,6 +373,13 @@ header {
     padding-right: 30px;
   }
 }
+@media (max-width: 767px) {
+  header {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 42px;
+  }
+}
 @media (max-width: 1279px) {
   header {
     padding-top: 30px;
@@ -325,10 +399,22 @@ header {
     padding-right: 30px;
   }
 }
+@media (max-width: 767px) {
+  .not-only {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 42px;
+  }
+}
 @media (max-width: 1279px) {
   .not-only {
     flex-direction: column;
     align-items: center;
+  }
+}
+@media (max-width: 767px) {
+  .not-only {
+    padding-top: 60px;
   }
 }
 
@@ -348,11 +434,24 @@ header {
     padding-right: 30px;
   }
 }
+@media (max-width: 767px) {
+  .about-wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 42px;
+  }
+}
 @media (max-width: 1279px) {
   .about-wrapper {
     flex-direction: column-reverse;
     align-items: center;
     gap: 80px;
+  }
+}
+@media (max-width: 767px) {
+  .about-wrapper {
+    gap: 42px;
+    padding-bottom: 42px;
   }
 }
 
@@ -369,6 +468,18 @@ header {
     padding-right: 30px;
   }
 }
+@media (max-width: 767px) {
+  .our-friends-wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 42px;
+  }
+}
+@media (max-width: 767px) {
+  .our-friends-wrapper {
+    padding-bottom: 42px;
+  }
+}
 
 .help-wrapper {
   max-width: 1200px;
@@ -381,6 +492,18 @@ header {
   .help-wrapper {
     padding-left: 30px;
     padding-right: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .help-wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 42px;
+  }
+}
+@media (max-width: 767px) {
+  .help-wrapper {
+    padding-bottom: 42px;
   }
 }
 
@@ -400,11 +523,24 @@ header {
     padding-right: 30px;
   }
 }
+@media (max-width: 767px) {
+  .donations-wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 42px;
+  }
+}
 @media (max-width: 1279px) {
   .donations-wrapper {
     flex-direction: column-reverse;
     align-items: center;
     gap: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .donations-wrapper {
+    gap: 42px;
+    padding-bottom: 42px;
   }
 }
 
@@ -421,13 +557,31 @@ footer {
     padding-right: 30px;
   }
 }
+@media (max-width: 767px) {
+  footer {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 42px;
+  }
+}
 @media (max-width: 1279px) {
   footer {
     flex-wrap: wrap;
     justify-content: center;
     row-gap: 65px;
-    column-gap: 60px;
+    column-gap: 50px;
     padding-top: 30px;
+  }
+}
+@media (max-width: 767px) {
+  footer {
+    row-gap: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-img {
+    width: 260px;
   }
 }
 
@@ -446,16 +600,33 @@ h1 {
 .header-nav a {
   margin-left: 31px;
 }
-
-.not-only-content {
-  margin-top: 163px;
-  width: 460px;
-}
-@media (max-width: 1279px) {
-  .not-only-content {
-    margin-top: 0;
-    margin-bottom: 100px;
+@media (max-width: 767px) {
+  .header-nav a {
+    display: none;
   }
+}
+
+.burger {
+  display: none;
+  background-image: url("../../assets/icons/burger.png");
+  background-repeat: no-repeat;
+}
+@media (max-width: 767px) {
+  .burger {
+    display: block;
+    width: 30px;
+    height: 22px;
+    margin-right: 43px;
+  }
+}
+
+.hamburger-btn:before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 0px;
+  width: 100%;
+  border-top: 5px solid #F1CDB3;
 }
 
 @media (max-width: 1279px) {
@@ -478,13 +649,48 @@ h2 {
     min-width: 569px;
   }
 }
+@media (max-width: 767px) {
+  .not-only-image {
+    min-width: 260px;
+  }
+}
+
+.not-only-content {
+  margin-top: 163px;
+  width: 460px;
+}
+@media (max-width: 1279px) {
+  .not-only-content {
+    margin-top: 0;
+    margin-bottom: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .not-only-content {
+    text-align: center;
+    width: auto;
+  }
+}
 
 .not-only-content p {
   padding-bottom: 42px;
 }
+@media (max-width: 767px) {
+  .not-only-content p {
+    min-width: 300px;
+    width: calc(100vw - 308px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 .about-image {
   display: block;
+}
+@media (max-width: 767px) {
+  .about-image {
+    width: 260px;
+  }
 }
 
 .about-content {
@@ -493,6 +699,29 @@ h2 {
   flex-direction: column;
   row-gap: 25px;
   justify-content: center;
+}
+@media (max-width: 767px) {
+  .about-content {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-content h3 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-content p {
+    min-width: 270px;
+    width: calc(100vw - 308px);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+  }
 }
 
 .our-friends-wrapper h3 {
@@ -505,6 +734,19 @@ h2 {
   justify-content: space-between;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+@media (max-width: 767px) {
+  .our-friends-slider {
+    flex-flow: wrap;
+    justify-content: center;
+    width: 270px;
+    height: 507px;
+    gap: 20px 80px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 42px;
+    padding-bottom: 42px;
+  }
 }
 
 .our-friends-cards {
@@ -542,16 +784,34 @@ h2 {
     row-gap: 55px;
   }
 }
+@media (max-width: 767px) {
+  .help-cards-wrapper {
+    min-width: 100%;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding-top: 42px;
+  }
+}
 
 .donations-wrapper img {
   display: block;
   max-height: 261px;
+}
+@media (max-width: 767px) {
+  .donations-wrapper img {
+    max-height: 135px;
+  }
 }
 
 .donations-content {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
+}
+@media (max-width: 767px) {
+  .donations-content {
+    text-align: center;
+  }
 }
 
 .card-number {
@@ -565,6 +825,11 @@ h2 {
   border-radius: 9px;
   transition: 0.1s linear;
 }
+@media (max-width: 767px) {
+  .card-number {
+    width: 281px;
+  }
+}
 
 .card-number:hover {
   background-color: #FDDCC4;
@@ -572,6 +837,14 @@ h2 {
 
 .donation-description {
   max-width: 380px;
+}
+@media (max-width: 767px) {
+  .donation-description {
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+  }
 }
 
 .footer-col {
@@ -585,6 +858,18 @@ h2 {
   .footer-col {
     padding-top: 0;
   }
+}
+@media (max-width: 767px) {
+  .footer-col {
+    height: auto;
+    text-align: center;
+    align-items: center;
+    gap: 40px;
+  }
+}
+
+.footer-col h3 {
+  width: 290px;
 }
 
 .footer-element {

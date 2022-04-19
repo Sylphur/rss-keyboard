@@ -14,6 +14,11 @@
         display: none;
     }
 }
+.pet-card:nth-child(2n) {
+    @media (max-width: $breakpoint-2) {
+        display: none;
+    }
+}
 .pet-card:hover {
     box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
 }
@@ -35,5 +40,16 @@
         height: 113px;
         margin-left: auto;
         margin-right: auto;
+    }
+    @media (max-width: $breakpoint-2) {
+        width: 130px;
+        height: 87px;
+        row-gap: 20px;
+    }
+}
+.help-card img {
+    @media (max-width: $breakpoint-2) {
+        width: 50px;
+        height: 50px;
     }
 }
