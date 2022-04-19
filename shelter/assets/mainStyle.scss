@@ -331,6 +331,7 @@ h2 {
         padding-top: 0;
     }
     @media (max-width: $breakpoint-2) {
+        width: 100%;
         height: auto;
         text-align: center;
         align-items: center;
