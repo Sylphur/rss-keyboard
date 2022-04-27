@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./style.css">
     <title>Cozy House</title>
 </head>
-<body>
+<body class="body">
     <div class="header-container">
         <header>
             <div class="logo">
@@ -16,12 +16,29 @@
                 <p>Shelter for pets in Boston</p>
             </div>
             <nav class="header-nav">
-                <a href="#">About the shelter</a>
+                <a hraef="#">About the shelter</a>
                 <a href="../pets/index.html">Our pets</a>
                 <a href="#help">Help the shelter</a>
                 <a href="#footer">Contacts</a>
                 <div class="burger"></div>
             </nav>
+            <div class="burger-menu-wrapper hidden">
+            </div>
+            <div class="burger-menu">
+                    <div class="burger-logo">
+                        <div class="logo">
+                            <h1>Cozy House</h1>
+                            <p>Shelter for pets in Boston</p>
+                        </div>
+                        <div class="burger"></div>
+                    </div>
+                    <nav class="burger-nav">
+                        <a hraef="#" class="burger-btn">About the shelter</a>
+                        <a href="../pets/index.html">Our pets</a>
+                        <a href="#help" class="burger-btn">Help the shelter</a>
+                        <a href="#footer" class="burger-btn">Contacts</a>
+                    </nav>
+            </div>
         </header>
         <div class="not-only">
             <div class="not-only-content">
@@ -174,6 +191,6 @@
             <img class="footer-img" src="../../assets/images/footer-puppy.png" alt="cute_dog">
         </footer>
     </div>
-
+<script src="script.js"></script>
 </body>
 </html>

@@ -142,3 +142,18 @@ footer h4 {
         font-size: 20px;
     }
 }
+
+// js
+
+.burger-nav a {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 160%;
+    color: $color-dark-s;
+}
+.burger-nav a:first-child {
+    color: $color-light-s;
+    border-bottom: 2px solid $color-primary;
+}
