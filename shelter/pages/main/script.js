@@ -91,12 +91,14 @@ const burgerButton = document.querySelectorAll('.burger');
 const burgerLinks = document.querySelectorAll('.burger-btn');
 const burgerWrapper = document.querySelector('.burger-menu-wrapper');
 const burgerMenu = document.querySelector('.burger-menu');
+const logo = document.querySelector('.logo');
 function toggleBurger() {
     burgerWrapper.classList.toggle('hidden');
     burgerMenu.classList.toggle('active');
     body.classList.toggle('body-open');
-    burgerButton[0].classList.toggle('burger-open');
+    burgerButton[0].classList.toggle('hidden');
     burgerButton[1].classList.toggle('burger-open');
+    logo.classList.toggle('hidden');
 }
 for (let i of burgerButton) {
     i.addEventListener('click', toggleBurger);
