@@ -157,3 +157,38 @@ footer h4 {
     color: $color-light-s;
     border-bottom: 2px solid $color-primary;
 }
+
+// popup
+
+.popup-name {
+    color: #000;
+}
+.popup-title {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #000000;
+}
+.popup-description {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: #000000;
+    @media (max-width: $breakpoint-1) {
+        font-size: 13px;
+    }
+}
+.popup-info ul {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-size: 15px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: #000000;
+}
