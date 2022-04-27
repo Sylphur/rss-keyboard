@@ -152,6 +152,44 @@ header {
   border-bottom: 2px solid #F1CDB3;
 }
 
+.popup-name {
+  color: #000;
+}
+
+.popup-title {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+
+.popup-description {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+@media (max-width: 1279px) {
+  .popup-description {
+    font-size: 13px;
+  }
+}
+
+.popup-info ul {
+  font-family: "Georgia";
+  font-style: normal;
+  font-size: 15px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+
 .button-primary {
   font-family: "Georgia";
   font-style: normal;
@@ -258,6 +296,21 @@ header {
 .btn-center:hover {
   background-color: #F1CDB3;
   border: 2px solid #F1CDB3;
+}
+
+.popup-btn {
+  background-color: unset;
+  color: #292929;
+  background-image: url("../../assets/icons/modal_close.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  border: 2px solid #F1CDB3;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: 0.1s linear;
 }
 
 .pet-card {
@@ -635,6 +688,126 @@ h1 {
 
 .logo-open {
   display: none;
+}
+
+.section-popup:hover .popup-btn {
+  background-color: #F1CDB3;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.popup:hover .popup-btn {
+  background-color: unset;
+}
+
+.popup-wrapper {
+  width: 900px;
+  height: 500px;
+  background-color: #FAFAFA;
+  box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+  border-radius: 9px;
+  display: flex;
+  gap: 30px;
+}
+@media (max-width: 1279px) {
+  .popup-wrapper {
+    width: 630px;
+    height: 350px;
+    gap: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .popup-wrapper {
+    width: 240px;
+    height: 341px;
+  }
+}
+
+.shadow {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 500%;
+  background-color: rgba(41, 41, 41, 0.5960784314);
+  z-index: 1;
+  cursor: pointer;
+}
+
+.popup-btn {
+  position: absolute;
+  top: -50px;
+  right: -40px;
+}
+.popup-btn:hover .popup-btn {
+  background-color: #F1CDB3;
+}
+
+.popup-img {
+  width: 500px;
+  height: 500px;
+}
+@media (max-width: 1279px) {
+  .popup-img {
+    width: 350px;
+    height: 350px;
+  }
+}
+@media (max-width: 767px) {
+  .popup-img {
+    display: none;
+  }
+}
+
+.popup-txt {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-right: 20px;
+}
+@media (max-width: 1279px) {
+  .popup-txt {
+    margin-top: 10px;
+    margin-right: 9px;
+  }
+}
+
+.popup-title {
+  margin: 10px 0px 40px;
+}
+@media (max-width: 1279px) {
+  .popup-title {
+    margin: 10px 0px 20px;
+  }
+}
+
+.popup-info {
+  margin-top: 40px;
+}
+@media (max-width: 1279px) {
+  .popup-info {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .popup-info {
+    margin-top: 25px;
+  }
+}
+
+.popup-info ul {
+  margin: 0;
+  padding-left: 14px;
+}
+
+.popup-info li {
+  list-style-type: none;
+  padding-bottom: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
