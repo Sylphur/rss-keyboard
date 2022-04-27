@@ -121,3 +121,17 @@ header {
 .header-nav a:hover {
     color: $color-dark-3x1;
 }
+
+// js
+.burger-nav a {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 160%;
+    color: $color-dark-l;
+}
+.burger-nav a:nth-child(2) {
+    color: $color-dark-3x1;
+    border-bottom: 2px solid $color-primary;
+}
