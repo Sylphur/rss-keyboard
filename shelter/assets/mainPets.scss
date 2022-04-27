@@ -93,6 +93,7 @@ h1 {
         width: 30px;
         height: 22px;
         margin-right: 43px;
+        transition: all 0.5s linear;
     }
 }
 .cards-container {
@@ -173,4 +174,57 @@ h1 {
 .london {
     margin-right: 10px;
     padding-right: 20px;
+}
+.burger-menu-wrapper {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: #29292998;
+    overflow: hidden;
+    z-index: 1;
+}
+.burger-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: -365px;
+    width: 320px;
+    height: 100%;
+    background-color: $color-light-s;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 10px 0px 10px;
+    transition: right 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    z-index: 2;
+}
+.burger-logo {
+    display: flex;
+    align-items: center;
+}
+.burger-nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 158px;
+    align-items: center;
+    gap: 40px;
+}
+ // js
+.hidden {
+    display: none;
+}
+.burger-menu.active {
+    display: block;
+    right: 0;
+    overflow-y: scroll;
+}
+.body-open {
+    overflow: hidden;
+}
+.burger-open {
+    transform: rotate(90deg);
+}
+.logo-open {
+    display: none;
 }
