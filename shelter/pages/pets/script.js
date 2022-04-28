@@ -153,3 +153,78 @@ const closePopup = () => {
 }
 shadow.addEventListener('click', closePopup);
 popupBtn.addEventListener('click', closePopup);
+
+// pagination
+
+const petCards = document.querySelectorAll('.pet-card');
+let pages = 6;
+let petsAtPage = 8;
+if ((window.innerWidth > 767) && (window.innerWidth < 1280)) {
+  pages = 8;
+  petsAtPage = 6;
+} else if (window.innerWidth < 768) {
+  pages = 16;
+  petsAtPage = 3;
+}
+const petsArr = Array(pages);
+for (let i = 0; i < petsArr.length; i++) {
+  let randomize = [0,1,2,3,4,5,6,7];
+  let shuffle = randomize.sort(() => Math.random() - 0.5).slice(0,petsAtPage);
+  petsArr[i] = shuffle;
+} 
+
+const btnStart = document.querySelector('.btn-left-2');
+const btnLeft = document.querySelector('.btn-left-1');
+const btnCenter = document.querySelector('.btn-center');
+const btnRight = document.querySelector('.btn-right-1');
+const btnEnd = document.querySelector('.btn-right-2');
+
+const pageChanger = (pageIndex) => {
+  btnCenter.textContent = pageIndex + 1;
+  if (pageIndex == 0) {
+    btnStart.classList.add('disabled');
+    btnLeft.classList.add('disabled');
+    btnRight.classList.remove('disabled');
+    btnEnd.classList.remove('disabled');
+  }
+  if (pageIndex == (pages - 1)) {
+    btnStart.classList.remove('disabled');
+    btnLeft.classList.remove('disabled');
+    btnRight.classList.add('disabled');
+    btnEnd.classList.add('disabled');
+  }
+  if ((pageIndex > 0) && (pageIndex < (pages - 1))) {
+    btnStart.classList.remove('disabled');
+    btnLeft.classList.remove('disabled');
+    btnRight.classList.remove('disabled');
+    btnEnd.classList.remove('disabled');
+  }
+  for (let i = 0; i < petsArr[pageIndex].length; i++) {
+    let petIndex = petsArr[pageIndex][i];
+    petCards[i].querySelector('img').src = pets[petIndex].img;
+    petCards[i].querySelector('p').textContent = pets[petIndex].name;
+  }
+}
+
+let pagesCount = 0;
+btnStart.addEventListener('click', () => {
+  pagesCount = 0;
+  pageChanger(pagesCount);
+});
+btnLeft.addEventListener('click', () => {
+  if (pagesCount > 0) {
+    pagesCount--;
+    pageChanger(pagesCount);
+  }
+})
+btnRight.addEventListener('click', () => {
+  if (pagesCount < (pages - 1)) {
+    pagesCount++;
+    pageChanger(pagesCount);
+  }
+})
+btnEnd.addEventListener('click', () => {
+  pagesCount = pages - 1;
+  pageChanger(pages - 1);
+})
+pageChanger(pagesCount);
