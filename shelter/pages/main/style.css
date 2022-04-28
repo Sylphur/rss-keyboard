@@ -287,6 +287,7 @@ h5 {
   color: #CDCDCD;
   border: 2px solid #CDCDCD;
   background-color: unset;
+  pointer-events: none;
 }
 
 .slider-change.disabled h4 {
@@ -1016,7 +1017,6 @@ h2 {
 
 .popup-wrapper {
   width: 900px;
-  height: 500px;
   background-color: #FAFAFA;
   box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
   border-radius: 9px;
@@ -1026,14 +1026,12 @@ h2 {
 @media (max-width: 1279px) {
   .popup-wrapper {
     width: 630px;
-    height: 350px;
     gap: 10px;
   }
 }
 @media (max-width: 767px) {
   .popup-wrapper {
     width: 240px;
-    height: 341px;
   }
 }
 
@@ -1078,6 +1076,7 @@ h2 {
   flex-direction: column;
   margin-top: 50px;
   margin-right: 20px;
+  margin-bottom: 10px;
 }
 @media (max-width: 1279px) {
   .popup-txt {

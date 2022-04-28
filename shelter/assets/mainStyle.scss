@@ -423,7 +423,6 @@ h2 {
 }
 .popup-wrapper {
     width: 900px;
-    height: 500px;
     background-color: $color-light-s;
     box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
     border-radius: 9px;
@@ -431,12 +430,10 @@ h2 {
     gap: 30px;
     @media (max-width: $breakpoint-1) {
         width: 630px;
-        height: 350px;
         gap: 10px;
     }
     @media (max-width: $breakpoint-2) {
         width: 240px;
-        height: 341px;
     }
 }
 .shadow {
@@ -475,6 +472,7 @@ h2 {
     flex-direction: column;
     margin-top: 50px;
     margin-right: 20px;
+    margin-bottom: 10px;
     @media (max-width: $breakpoint-1) {
         margin-top: 10px;
         margin-right: 9px;
