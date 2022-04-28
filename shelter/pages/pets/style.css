@@ -255,6 +255,7 @@ header {
   color: #CDCDCD;
   border: 2px solid #CDCDCD;
   background-color: unset;
+  pointer-events: none;
 }
 
 .slider-change.disabled h4 {
