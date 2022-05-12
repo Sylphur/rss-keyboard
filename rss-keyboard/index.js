@@ -410,7 +410,7 @@ renderKeys(lang, capsLock);
 
 //взаимодействие кнопки с текстовым полем
 function writeText(key) {
-    if (key == "Backspace") {}
+    if (key == "Backspace") {TEXTAREA.value = TEXTAREA.value.slice(0, -1)}
     else if (key == "Del") {TEXTAREA.value = "";}
     else if (key == "Caps Lock") {
         capsLock = !capsLock;
@@ -436,7 +436,7 @@ KEYBOARD.addEventListener ("mousedown", function(event) {
         let target = event.target;
         target.classList.add("focused");
         if (target.textContent == "Shift") {
-            shift = true;
+            //shift = true;
             let buttons = document.querySelectorAll(".keyboard span");
             buttons.forEach((button, i) => {
                 if (KEYS[i].data == button.getAttribute("data-key") && KEYS[i].shift) {
@@ -462,7 +462,7 @@ KEYBOARD.addEventListener ("mouseup", function(event) {
         let target = event.target;
         target.classList.remove("focused");
         if (target.textContent == "Shift") {
-            shift = true;
+            //shift = true;
             let buttons = document.querySelectorAll(".keyboard span");
             buttons.forEach((button, i) => {
                 if (KEYS[i].data == button.getAttribute("data-key") && KEYS[i].shift) {
@@ -484,7 +484,7 @@ BODY.addEventListener("keydown", function(event) {
             writeText(button.textContent);
 
             if (button.textContent == "Shift") {
-                shift = true;
+                //shift = true;
                 buttons.forEach((button, i) => {
                     if (KEYS[i].data == button.getAttribute("data-key") && KEYS[i].shift) {
                         if (lang == "ru") {

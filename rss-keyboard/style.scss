@@ -46,6 +46,10 @@ body {
     align-items: center;
     justify-content: center;
     border-radius: 4px;
+    transition: 0.2s linear;
+}
+.keyboard-btn:hover {
+    background-color: rgb(31, 41, 51);
 }
 .backspace-btn {
     width: 12%;
@@ -69,5 +73,5 @@ body {
     background-color: rgba(42, 55, 68, 0.9);
 }
 .focused {
-    background-color: #000;
+    background-color: #000 !important;
 }
