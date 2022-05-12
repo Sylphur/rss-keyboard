@@ -1,0 +1,117 @@
+body {
+  background-color: #FFF;
+}
+
+.textarea-container {
+  margin: 200px auto 40px auto;
+  width: 95vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.keyboard-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 95vw;
+}
+
+.textarea-title {
+  margin-bottom: 10px;
+  font-size: 3rem;
+  color: rgba(42, 55, 68, 0.9);
+}
+
+.textarea-subtitle {
+  font-size: 2rem;
+  color: rgba(42, 55, 68, 0.9);
+  margin-bottom: 40px;
+}
+
+.keyboard-imput {
+  resize: none;
+  max-width: 1000px;
+  width: 95vw;
+  height: 20vh;
+  font-size: 2rem;
+}
+
+.keyboard {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.keyboard-btn {
+  cursor: pointer;
+  user-select: none;
+  background-color: rgba(42, 55, 68, 0.7);
+  font-size: 20px;
+  color: #FFF;
+  margin: 4px;
+  width: 5.5%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: 0.2s linear;
+}
+@media (max-width: 841px) {
+  .keyboard-btn {
+    height: 30px;
+    width: 5%;
+    font-size: 16px;
+  }
+}
+
+.keyboard-btn:hover {
+  background-color: rgb(31, 41, 51);
+}
+
+.backspace-btn {
+  width: 12%;
+}
+
+.tab-btn {
+  width: 8%;
+}
+
+.caps-btn {
+  width: 12%;
+}
+
+.enter-btn {
+  width: 14%;
+}
+
+.shift-btn {
+  width: 12%;
+}
+@media (max-width: 841px) {
+  .shift-btn {
+    width: 13%;
+  }
+}
+
+.space-btn {
+  width: 46%;
+}
+@media (max-width: 841px) {
+  .space-btn {
+    width: 41%;
+  }
+}
+
+.beautify {
+  background-color: rgba(42, 55, 68, 0.9);
+}
+
+.focused {
+  background-color: #000 !important;
+}
+
+/*# sourceMappingURL=style.css.map */
