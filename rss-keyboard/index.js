@@ -360,8 +360,20 @@ const KEYS = [
     }
     
 ];
+//перезагрузака страницы
+function setLocalStorage() {
+    localStorage.setItem("lang", lang);
+}
+function getLocalStorage() {
+    if (localStorage.getItem("lang")) {
+        lang = localStorage.getItem("lang");
+    }
+    else {lang = "en"};
+}
 
-let lang = "en";
+let lang;
+getLocalStorage();
+
 let capsLock = false;
 //let shift = false; возможно переделать с ctrl на shift
 let ctrl = false;
@@ -508,8 +520,14 @@ BODY.addEventListener("keydown", function(event) {
             }
             else if (button.textContent == "Ctrl") {ctrl = true;}
             else if (button.textContent == "Alt" && ctrl) {
-                if (lang == "en") {lang = "ru";}
-                else {lang = "en";}
+                if (lang == "en") {
+                    lang = "ru";
+                    setLocalStorage()
+                }
+                else {
+                    lang = "en";
+                    setLocalStorage()
+            }
                 buttons.forEach((button, i) => {
                     button.textContent = KEYS[i][lang];
                 });
