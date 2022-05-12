@@ -363,7 +363,7 @@ const KEYS = [
 
 let lang = "en";
 let capsLock = false;
-//let shift = false; возможно переделать с ctrl на shif
+//let shift = false; возможно переделать с ctrl на shift
 let ctrl = false;
 
 const BODY = document.body;
@@ -529,6 +529,7 @@ BODY.addEventListener("keyup", function(event) {
                     }
                 });
             }
+            else if (button.textContent == "Ctrl") {ctrl = false;}
         }
     });
 });
