@@ -363,7 +363,7 @@ const KEYS = [
 
 let lang = "en";
 let capsLock = false;
-//let shift = false; возможно переделать с ctrl на shif
+//let shift = false; возможно переделать с ctrl на shift
 let ctrl = false;
 
 const BODY = document.body;
@@ -372,6 +372,9 @@ TEXTCONTAINER.classList.add("textarea-container");
 const TITLE = document.createElement("h1");
 TITLE.classList.add("textarea-title");
 TITLE.textContent = "RSS Virtual Keyboard";
+const SUBTITLE = document.createElement("h2");
+SUBTITLE.classList.add("textarea-subtitle");
+SUBTITLE.textContent = "(ctrl+alt to change the language)";
 const TEXTAREA = document.createElement("textarea");
 TEXTAREA.classList.add("keyboard-imput");
 const KEYBOARDCONTAINER = document.createElement("div");
@@ -381,6 +384,7 @@ KEYBOARD.classList.add("keyboard");
 
 BODY.append(TEXTCONTAINER);
 TEXTCONTAINER.append(TITLE);
+TEXTCONTAINER.append(SUBTITLE);
 TEXTCONTAINER.append(TEXTAREA);
 BODY.append(KEYBOARDCONTAINER);
 KEYBOARDCONTAINER.append(KEYBOARD);
@@ -529,6 +533,7 @@ BODY.addEventListener("keyup", function(event) {
                     }
                 });
             }
+            else if (button.textContent == "Ctrl") {ctrl = false;}
         }
     });
 });
