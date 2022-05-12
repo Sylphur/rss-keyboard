@@ -410,7 +410,7 @@ renderKeys(lang, capsLock);
 
 //взаимодействие кнопки с текстовым полем
 function writeText(key) {
-    if (key == "Backspace") {TEXTAREA.value = TEXTAREA.value.slice(0, -1)}
+    if (key == "Backspace") {TEXTAREA.value = TEXTAREA.value.slice(0, -1);}
     else if (key == "Del") {TEXTAREA.value = "";}
     else if (key == "Caps Lock") {
         capsLock = !capsLock;
@@ -508,7 +508,7 @@ BODY.addEventListener("keydown", function(event) {
                 else {lang = "en";}
                 buttons.forEach((button, i) => {
                     button.textContent = KEYS[i][lang];
-                })
+                });
             }
 
         }
