@@ -363,7 +363,7 @@ const KEYS = [
 
 let lang = "en";
 let capsLock = false;
-let shift = false;
+//let shift = false; возможно переделать с ctrl на shif
 let ctrl = false;
 
 const BODY = document.body;
