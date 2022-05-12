@@ -374,7 +374,7 @@ TITLE.classList.add("textarea-title");
 TITLE.textContent = "RSS Virtual Keyboard";
 const SUBTITLE = document.createElement("h2");
 SUBTITLE.classList.add("textarea-subtitle");
-SUBTITLE.textContent = "(ctrl+alt to change the language)"
+SUBTITLE.textContent = "(ctrl+alt to change the language)";
 const TEXTAREA = document.createElement("textarea");
 TEXTAREA.classList.add("keyboard-imput");
 const KEYBOARDCONTAINER = document.createElement("div");
