@@ -60,6 +60,13 @@ body {
   border-radius: 4px;
   transition: 0.2s linear;
 }
+@media (max-width: 841px) {
+  .keyboard-btn {
+    height: 30px;
+    width: 5%;
+    font-size: 16px;
+  }
+}
 
 .keyboard-btn:hover {
   background-color: rgb(31, 41, 51);
@@ -84,9 +91,19 @@ body {
 .shift-btn {
   width: 12%;
 }
+@media (max-width: 841px) {
+  .shift-btn {
+    width: 13%;
+  }
+}
 
 .space-btn {
   width: 46%;
+}
+@media (max-width: 841px) {
+  .space-btn {
+    width: 41%;
+  }
 }
 
 .beautify {
