@@ -368,7 +368,7 @@ function getLocalStorage() {
     if (localStorage.getItem("lang")) {
         lang = localStorage.getItem("lang");
     }
-    else {lang = "en"};
+    else {lang = "en";}
 }
 
 let lang;
@@ -522,11 +522,11 @@ BODY.addEventListener("keydown", function(event) {
             else if (button.textContent == "Alt" && ctrl) {
                 if (lang == "en") {
                     lang = "ru";
-                    setLocalStorage()
+                    setLocalStorage();
                 }
                 else {
                     lang = "en";
-                    setLocalStorage()
+                    setLocalStorage();
             }
                 buttons.forEach((button, i) => {
                     button.textContent = KEYS[i][lang];
